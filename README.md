@@ -1,17 +1,19 @@
 # Azure OpenAI - Progressive Document Summarization
 
-[OpenAI's](https://openai.com/) state-of-the-art language processing models offer users new capabilities to generate concise, meaningful summaries of long-form documents. [Microsoft's new Azure OpenAI service](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service/) allows enterprises the ability to use these ML capabilities to support enterprise workloads while being backed by the [security and responsible use promise](https://learn.microsoft.com/en-us/legal/cognitive-services/openai/data-privacy?context=%2Fazure%2Fcognitive-services%2Fopenai%2Fcontext%2Fcontext) of working the in the Microsoft cloud. 
+<b>[OpenAI's](https://openai.com/) state-of-the-art language processing models offer users new capabilities to generate concise, meaningful summaries of long-form documents. [Microsoft's new Azure OpenAI service](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service/) allows enterprises the ability to use these ML capabilities to support enterprise workloads while being backed by the [security and responsible use promise](https://learn.microsoft.com/en-us/legal/cognitive-services/openai/data-privacy?context=%2Fazure%2Fcognitive-services%2Fopenai%2Fcontext%2Fcontext) of working the in the Microsoft cloud.</b>
 
 
-For businesses, consolidating complex long-form documents into concise, digestible summaries can provide new insights across different domains and stands to transform traditional processes. While OpenAI's transformer models are extremely powerful, they currently impose a limitation on users in how much data can be summarized at a given time.
+For businesses, consolidating complex long-form documents into concise, digestible summaries can provide new insights across different domains and stands to transform traditional processes. While OpenAI's transformer models are extremely powerful, they currently are limited in how much data can be summarized in a single request.
 
 
 Here, we showcase a recursive summarization approach where multiple documents can be summarized progressively to create wholistic narratives. As a source text (or for our purposes, a collection of "documents") we are working from [Jules Verne's manuscript for '20,000 Leagues Under the Sea' available in the public domain via the Gutenberg Project](https://www.gutenberg.org/files/164/164-h/164-h.htm). 
 
 
+Within the sample notebook in this repo [`Verne.ipynb`](Verne.ipynb) each chapter of Verne's work is first downloaded and retained as a separate document. In our recursive processing routine we first summarize each chapter, consolidate the summaries, and then generate a final wholistic summary of the entire novel as shown below.
 
-Within the sample notebook in this repo [`Verne.ipynb`](Verne.ipynb) each chapter of Verne's work is first downloaded and retained as a separate document. In our recursive processing approach we first summarize each chapter, consolidate the summaries, and then generate a final wholistic summary of the entire novel as shown below.
-
+<p align="center">
+  <img src="img/20000.png" />
+</p>
 
 <b>20,000 Leagues Under the Sea - OpenAI Generated Summary:</b>
 
