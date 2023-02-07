@@ -12,7 +12,7 @@ Here, we showcase a recursive summarization approach where multiple documents ca
 Within the sample notebook in this repo [`Verne.ipynb`](Verne.ipynb) each chapter of Verne's work is first downloaded and retained as a separate document. In our recursive processing routine we first summarize each chapter, consolidate the summaries, and then generate a final wholistic summary of the entire novel as shown below.
 
 <p align="center">
-  <img src="img/20000.png" width="320px"/>
+  <img src="img/20000.png" width="400px"/>
 </p>
 
 <b>20,000 Leagues Under the Sea - OpenAI Generated Summary:</b>
