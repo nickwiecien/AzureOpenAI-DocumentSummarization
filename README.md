@@ -6,10 +6,10 @@ For businesses, consolidating complex long-form documents into concise, digestib
 
 Here, we showcase a recursive summarization approach where multiple documents can be summarized progressively to create wholistic narratives. As a source text (or for our purposes, a collection of "documents") we are working from [Jules Verne's manuscript for '20,000 Leagues Under the Sea' available in the public domain via the Gutenberg Project]((https://www.gutenberg.org/files/164/164-h/164-h.htm)). 
 
-Each chapter is downloaded and retained as a separate document. In our recursive processing approach we first summarize each chapter, consolidate the summaries, and then generate a final wholistic summary of the entire novel as shown below.
+Within the sample notebook in this repo [`./Verne.ipynb`]('./Verne.ipynb') each chapter of Verne's work is first downloaded and retained as a separate document. In our recursive processing approach we first summarize each chapter, consolidate the summaries, and then generate a final wholistic summary of the entire novel as shown below.
 
 
-<b>20,000 Leagues Under the Sea - OpenAI Summary:</b>
+<b>20,000 Leagues Under the Sea - OpenAI Generated Summary:</b>
 <pre>
 Pierre Aronnax, a professor from the Museum of Natural History in Paris, joins an expedition to hunt a giant narwhal in the North Pacific Ocean. After three months of searching, the crew spots the narwhal and prepares for battle. Pierre and Conseil are lost at sea after the frigate they were on collides with the narwhal. They are rescued by a submarine boat and taken to the Nautilus, a powerful submarine vessel owned by Captain Nemo. The vessel is powered by electricity and is equipped with a kitchen, bathroom, and berthroom. The passengers explore the ocean floor and a submarine forest, encountering a variety of flora and fauna. They navigate the dangerous waters of the Torres Straits and the Indian Ocean, encountering various species of fish, molluscs, and zoophytes. They pass by the reefs where Captain Cook's vessel was lost and eventually enter the Mediterranean. The Nautilus is pursued by a warship, which Nemo sinks, and the crew eventually escapes in a boat. Pierre Aronnax and his companions experience a thrilling journey under the sea, encountering a variety of sea creatures and marveling at the wonders of the ocean.</pre>
 
